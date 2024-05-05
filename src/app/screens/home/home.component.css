@@ -25,11 +25,11 @@ nav{
     background: linear-gradient(217.64deg, #9181F4 -5.84%, #97E7E1 106.73%);
     
 }
-nav ul li a:hover{
+nav ul li button:hover{
     background-color: transparent;
     color: white;
 }
-nav ul li a.main{
+nav ul li button.main{
     color: #ffffff;
 }
 section{
@@ -54,12 +54,15 @@ section{
         padding: 0;
         display: flex;
     }
-    nav ul li a{
-        line-height: 80px;
+    nav ul li button{
+        line-height: 70px;
         color: #000000;
         padding: 12px 30px;
         text-decoration: none;
         font-size: clamp(12px, 2vw, 20px);
+        background-color: transparent;
+        border: none;
+        background: none;
     }
     .ordernow{
         position: absolute;

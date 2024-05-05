@@ -1,0 +1,110 @@
+.backgroundright{
+position: absolute;
+width: 50%;
+height: 100%;
+right: 0px;
+top: 0px;
+background: linear-gradient(217.64deg, #9181F4 -5.84%, #97E7E1 106.73%);
+}
+.logintitle{
+position: absolute;
+width: 93px;
+height: 21px;
+left: 21%;
+top: 162px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+text-transform: uppercase;
+color: #000000;
+}
+.inputuser{
+position: absolute;
+width: 364px;
+height: 52px;
+left: 159px;
+top: 228px;
+}
+
+.userimg{
+    position: absolute;
+    left:35%;
+    top:65px;
+}
+
+.usernameinput{
+    padding-left: 40px;
+    /* Rectangle 6 */
+
+position: absolute;
+width: 364px;
+height: 52px;
+left: 110px;
+top: 50px;
+
+background: rgba(240, 237, 255, 0.8);
+border-radius: 16px;
+}
+.inputpass{
+    position: absolute;
+    width: 364px;
+    height: 52px;
+    left: 159px;
+    top: 310px;
+    }
+    
+    .passimg{
+        position: absolute;
+        left:35%;
+        top:65px;
+    }
+    
+    .passwordinput{
+        padding-left: 40px;
+        /* Rectangle 6 */
+    
+    position: absolute;
+    width: 364px;
+    height: 52px;
+    left: 110px;
+    top: 50px;
+    
+    background: rgba(240, 237, 255, 0.8);
+    border-radius: 16px;
+    }
+    .loginimage{
+    box-sizing: border-box;
+    position: absolute;
+    width: 550px;
+    height: 700px;
+    left: 61%;
+    top: 13%;
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(6.8px);
+    border-radius: 46px;
+    }
+    .loginbtn{
+position: absolute;
+width: 124px;
+height: 52px;
+left: 290px;
+top: 450px;
+background: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
+box-shadow: 0px 8px 21px rgba(0, 0, 0, 0.16);
+border-radius: 16px;
+    }
+    .logintitle{
+        font-weight: bold;
+    }
+    .signupbtn{
+        position: absolute;
+        width: 124px;
+        height: 52px;
+        left: 490px;
+        top: 450px;
+        background: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
+        box-shadow: 0px 8px 21px rgba(0, 0, 0, 0.16);
+        border-radius: 16px;
+    }
