@@ -1,30 +1,72 @@
-<body>
-    <div class="backgroundright"></div>
-    <img class="signupimage" src="/assets/login.jpg">
-    <div class="signuptitle">SIGN UP</div>
-    
-    <div class="inputuser">
-    <input class= "usernameinput" type="text" placeholder="Username">
-    <img class="userimg" src="/assets/username.png">
+<div class="container-fluid">
+  <div class="backgroundright"></div>
+  <img class="signupimage" src="/assets/login.jpg" />
+  <div class="signuptitle">SIGN UP</div>
+  <form (ngSubmit)="signUp()">
+    <div>
+      <label for="firstname">Firstname</label>
+      <input
+        type="text"
+        class="form-control"
+        name="firstname"
+        [(ngModel)]="firstname"
+        required
+      />
+    </div>
+    <div>
+      <label for="middlename">Middle Initial (Optional)</label>
+      <input
+        type="text"
+        class="form-control"
+        name="middlename"
+        [(ngModel)]="middlename"
+      />
+    </div>
+    <div>
+      <label for="lastname">Lastname</label>
+      <input
+        type="text"
+        class="form-control"
+        name="lastname"
+        [(ngModel)]="lastname"
+      />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        [(ngModel)]="email"
+      />
+    </div>
+    <div>
+      <label for="contact">Contact</label>
+      <input
+        type="text"
+        class="form-control"
+        name="contact"
+        [(ngModel)]="contact"
+      />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div>
+      <label for="confirm_password">Confirm Password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="confirm_password"
+        [(ngModel)]="confirm_password"
+      />
+    </div>
+    <button type="submit" class="signupbtn">Sign Up</button>
+  </form>
 </div>
-
-<div class="inputemail">
-    <input class= "emailinput" type="text" placeholder="Email">
-    <img class="emailimg" src="/assets/username.png">
-</div>
-<div class="inputcontact">
-    <input class= "contactinput" type="text" placeholder="Contact Number">
-    <img class="contactimg" src="/assets/number.png">
-</div>
-<div class="inputpassword">
-    <input class= "passwordinput" type="text" placeholder="Password">
-    <img class="passwordimg" src="/assets/password.png">
-</div>
-<div class="inputpasswordverify">
-    <input class= "passwordverifyinput" type="text" placeholder="Verify Password">
-    <img class="passwordverifyimg" src="/assets/password.png">
-</div>
-<div class="buttons">
-    <button (click)="goToPage('login')" class="signupbtn">Sign Up</button>
-</div>
-</body>

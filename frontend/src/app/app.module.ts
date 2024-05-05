@@ -5,18 +5,31 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './screens/signup/signup.component';
 import { SiginComponent } from './screens/sigin/sigin.component';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { JwtHelperService, JwtInterceptor, JwtModule } from '@auth0/angular-jwt';
+import { ServerService } from './service/server.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SignupComponent,
-    SiginComponent,
-  ],
+  declarations: [AppComponent, SignupComponent, SiginComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: () => localStorage.getItem('jwt_token'),
+        allowedDomains: ['example.com'], // Add the domain(s) where your API is hosted
+        disallowedRoutes: [], // Add routes that should not include the JWT token
+      },
+    }),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    ServerService,
+    JwtHelperService,
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

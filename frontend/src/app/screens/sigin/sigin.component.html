@@ -1,19 +1,16 @@
-<body>
-    <div class="backgroundright"></div>
-    <img class="loginimage" src="/assets/login.jpg">
-    <div class="logintitle">Sign In</div>
-    
-    <div class="inputuser">
-    <input class= "usernameinput" type="text" placeholder="Username">
-    <img class="userimg" src="/assets/username.png">
-</div>
+<div class="container-fluid">
+  <div class="backgroundright"></div>
+  <img class="loginimage" src="/assets/login.jpg" />
+  <div class="logintitle">Sign In</div>
 
-<div class="inputpass">
-    <input class= "passwordinput" type="text" placeholder="Password">
-    <img class="passimg" src="/assets/password.png">
+  <form (ngSubmit)="signIn()">
+    <div>
+        <input class="form-control" placeholder="Email" type="email" name="email" [(ngModel)]="email">
+    </div>
+    <div>
+        <input class="form-control" placeholder="Password" type="password" name="password" [(ngModel)]="password">
+    </div>
+    <button type="submit" class="loginbtn">Sig In</button>
+    <button routerLink="/signUp" class="signupbtn">Sign Up</button>
+  </form>
 </div>
-<div class="buttons">
-    <button (click)="goToPage('home')" class="loginbtn">Sig In</button>
-    <button (click)="goToPage('signup')" class="signupbtn">Sign Up</button>
-</div>
-</body>

@@ -12,4 +12,11 @@ export class HomeComponent {
   goToPage(pageName:string):void{
       this.router.navigate([`${pageName}`])
   }
+
+  logout(){
+    sessionStorage.removeItem('jwt_token');
+    sessionStorage.removeItem('user_info');
+    sessionStorage.removeItem('user_id');
+    this.router.navigate(['/signIn']);
+  }
 }
