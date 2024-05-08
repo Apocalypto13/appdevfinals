@@ -8,7 +8,7 @@
     }
     .logintitle{
     position: absolute;
-    width: 93px;
+    width: 200px;
     height: 21px;
     left: 21%;
     top: 162px;
@@ -33,20 +33,18 @@
         left:35%;
         top:65px;
     }
-    
-    .usernameinput{
+    .form-control{
         padding-left: 40px;
-        /* Rectangle 6 */
-    
-    position: absolute;
-    width: 364px;
-    height: 52px;
-    left: 110px;
-    top: 50px;
-    
-    background: rgba(240, 237, 255, 0.8);
-    border-radius: 16px;
-    }
+        position: relative; 
+        width: 364px;
+        height: 52px;
+        background: rgba(240, 237, 255, 0.8);
+        border-radius: 16px;
+        margin-bottom: 20px; 
+        top:270px;
+        left:260px;
+      } 
+      
     .inputpass{
         position: absolute;
         width: 364px;

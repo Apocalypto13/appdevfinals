@@ -9,9 +9,10 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { JwtHelperService, JwtInterceptor, JwtModule } from '@auth0/angular-jwt';
 import { ServerService } from './service/server.service';
+import { AdminComponent } from './screens/admin/admin.component';
 
 @NgModule({
-  declarations: [AppComponent, SignupComponent, SiginComponent],
+  declarations: [AppComponent, SignupComponent, SiginComponent, AdminComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
