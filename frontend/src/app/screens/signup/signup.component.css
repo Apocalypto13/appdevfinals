@@ -11,7 +11,7 @@ position: absolute;
 width: 150px;
 height: 21px;
 left: 21%;
-top: 162px;
+top: 110px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 700;
@@ -20,28 +20,13 @@ line-height: 45px;
 text-transform: uppercase;
 color: #000000;
 }
-.inputuser{
-position: absolute;
-width: 364px;
-height: 52px;
-left: 159px;
-top: 228px;
-}
+
 .userimg{
     position: absolute;
     left:35%;
     top:66px;
 }
-.usernameinput{
-    padding-left: 40px;
-    position: absolute;
-    width: 364px;
-    height: 52px;
-    left: 110px;
-    top: 50px;
-    background: rgba(240, 237, 255, 0.8);
-    border-radius: 16px;
-}
+
 .signupimage{
     box-sizing: border-box;
     position: absolute;
@@ -58,111 +43,48 @@ top: 228px;
         width: 124px;
         height: 52px;
         left: 390px;
-        top: 690px;
+        top: 750px;
         background: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
         box-shadow: 0px 8px 21px rgba(0, 0, 0, 0.16);
         border-radius: 16px;
     }
-    .inputemail{
-        position: absolute;
-        width: 364px;
-        height: 52px;
-        left: 159px;
-        top: 310px;
-    }
-    .emailinput{
+    .form-control{
         padding-left: 40px;
-        position: absolute;
+        position: relative; 
         width: 364px;
         height: 52px;
-        left: 110px;
-        top: 50px;
         background: rgba(240, 237, 255, 0.8);
         border-radius: 16px;
-    }
-    .emailimg{
-    position: absolute;
-    left:35%;
-    top:66px;
-}
-        .inputcontact{
-            position: absolute;
-            width: 364px;
-            height: 52px;
-            left: 159px;
-            top: 310px;
+        margin-bottom: 20px; 
+        top:190px;
+        left:260px;
+      } 
+      .text-primary{
+        position: absolute;
+        top:0px;
+        left: 140px;
+        width: 100px;
+      }
+      .text1{
+        position: absolute;
+        top: 700px;
+        left: 290px;
+        width: 180px;
+        font-size: 12px;
+      }
+    @media (max-width: 1500px) {
+         .loginimage {
+        width: 450px; /* Example change */ 
         }
-            .contactinput{
-            padding-left: 40px;
-            position: absolute;
-            width: 364px;
-            height: 52px;
-            left: 110px;
-            top: 130px;
-            background: rgba(240, 237, 255, 0.8);
-            border-radius: 16px;
+         .signupbtn{
+        width: 100px;
+        transition: all 0.5s ease-in-out;
+        left:25%;
+         }
+        .form-control{
+        width: 100px;
+        transition: all 0.5s ease-in-out;
+        left:20%;
+        animation: ease-out 0.8;
         }
-        .contactimg{
-                position: absolute;
-                left:35%;
-                top:151px;
-            }
-            .inputpassword{
-                position: absolute;
-                    width: 364px;
-                    height: 52px;
-                    left: 159px;
-                    top: 310px;
-                    }
-                    .passwordinput{
-                        padding-left: 40px;
-                    position: absolute;
-                    width: 364px;
-                    height: 52px;
-                    left: 110px;
-                    top: 210px;
-                    background: rgba(240, 237, 255, 0.8);
-                    border-radius: 16px;
-                    }
-                    .passwordimg{
-                        position: absolute;
-                        left:35%;
-                        top:226px;
-                    }
-                        .inputpasswordverify{
-                            position: absolute;
-                            width: 364px;
-                            height: 52px;
-                            left: 159px;
-                            top: 310px;
-                        }
-                            .passwordverifyinput{
-                            padding-left: 40px;
-                            position: absolute;
-                            width: 364px;
-                            height: 52px;
-                            left: 110px;
-                            top: 290px;
-                            background: rgba(240, 237, 255, 0.8);
-                            border-radius: 16px;
-                            }
-                            .passwordverifyimg{
-                                position: absolute;
-                                left:35%;
-                                top:305px;
-                            }
-                            @media (max-width: 1500px) {
-                                .loginimage {
-                                    width: 450px; /* Example change */ 
-                                }
-                                .signupbtn{
-                                    width: 100px;
-                                    transition: all 0.5s ease-in-out;
-                                    left:25%;
-                                }
-                                .usernameinput,.inputuser,.inputemail,.emailinput,.contactinput,.inputcontact,.passwordinput,.inputpassword,.passwordverifyinput,.inputpasswordverify{
-                                width: 100px;
-                                transition: all 0.5s ease-in-out;
-                                left:20%;
-                            }
-                            }
+        }

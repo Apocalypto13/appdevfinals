@@ -4,71 +4,71 @@
   <div class="signuptitle">SIGN UP</div>
   <form (ngSubmit)="signUp()">
     <div>
-      <label for="firstname">Firstname</label>
       <input
         type="text"
         class="form-control"
         name="firstname"
         [(ngModel)]="firstname"
         required
+        placeholder="First Name"
       />
     </div>
     <div>
-      <label for="middlename">Middle Initial (Optional)</label>
       <input
         type="text"
         class="form-control"
         name="middlename"
         [(ngModel)]="middlename"
+        placeholder="Middle Initial (Optional)"
       />
     </div>
     <div>
-      <label for="lastname">Lastname</label>
       <input
         type="text"
         class="form-control"
         name="lastname"
         [(ngModel)]="lastname"
+        placeholder="Last Name"
       />
     </div>
     <div>
-      <label for="email">Email</label>
       <input
         type="email"
         class="form-control"
         name="email"
         [(ngModel)]="email"
+        placeholder="Email"
       />
     </div>
     <div>
-      <label for="contact">Contact</label>
       <input
         type="text"
         class="form-control"
         name="contact"
         [(ngModel)]="contact"
+        placeholder="Contact"
       />
     </div>
     <div>
-      <label for="password">Password</label>
       <input
         type="password"
         class="form-control"
         name="password"
         [(ngModel)]="password"
+        placeholder="Password"
       />
     </div>
     <div>
-      <label for="confirm_password">Confirm Password</label>
       <input
         type="password"
         class="form-control"
         name="confirm_password"
         [(ngModel)]="confirm_password"
+        placeholder="Confirm Password"
       />
     </div>
     <div>
-<p>Already have an account? <i class="text-primary" routerLink="/signIn">Sign In</i></p>
+<p class="text1">Already have an account? <i class="text-primary" routerLink="/signIn">Sign In</i></p>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </form>

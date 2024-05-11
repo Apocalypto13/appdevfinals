@@ -9,10 +9,12 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { JwtHelperService, JwtInterceptor, JwtModule } from '@auth0/angular-jwt';
 import { ServerService } from './service/server.service';
-import { AdminComponent } from './screens/admin/admin.component';
+import { AdminComponent } from './screens/admin (vehiclemanagement)/admin.component';
+import { AboutComponent } from './screens/about/about.component';
+import { CostumermanagementComponent } from './screens/costumermanagement/costumermanagement.component';
 
 @NgModule({
-  declarations: [AppComponent, SignupComponent, SiginComponent, AdminComponent],
+  declarations: [AppComponent, SignupComponent, SiginComponent, AdminComponent, AboutComponent, CostumermanagementComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
